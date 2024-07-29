@@ -19,13 +19,12 @@ spring:
 #-----------------------------------
 log:
   file:
-    path: D:/RIFA/Evaluasi/logfile.log
-
+    path: ./logfile.log 
 logging:
   level:
     com:
       tujuhsembilan: TRACE
-
+      
 #-----------------------------------
 --- # Actuator
 #-----------------------------------

@@ -42,12 +42,21 @@ public class SampleController {
   @Value("${log.file.path}")
   private String logFilePath;
 
+  private static final String LOG_SEPARATOR = "===========================================================================================================================================";
+
   @PostMapping("/error")
   public ResponseEntity<String> logError(@RequestBody Map<String, Object> errorDetails) {
     try (FileWriter writer = new FileWriter(logFilePath, true)) {
-      writer.write(LocalDateTime.now() + " - " + errorDetails.toString() + System.lineSeparator());
+        writer.write(LocalDateTime.now() + " - Error: " 
+            + (errorDetails.get("error") != null ? errorDetails.get("error") : "Tidak ada pesan error") 
+            + System.lineSeparator());
+        writer.write("Error Info: " 
+            + (errorDetails.get("errorInfo") != null ? errorDetails.get("errorInfo") : "Tidak ada info error") 
+            + System.lineSeparator());
+        
+        writer.write(LOG_SEPARATOR + System.lineSeparator());
     } catch (IOException e) {
-      return new ResponseEntity<>("Failed to write log", HttpStatus.INTERNAL_SERVER_ERROR);
+        return new ResponseEntity<>("Failed to write log", HttpStatus.INTERNAL_SERVER_ERROR);
     }
     return new ResponseEntity<>("Log saved successfully", HttpStatus.OK);
   }

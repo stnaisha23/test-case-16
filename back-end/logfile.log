@@ -1,0 +1,34 @@
+2024-07-30T00:38:22.901625200 - Error: Objects are not valid as a React child (found: object with keys {something}). If you meant to render a collection of children, use an array instead.
+Error: Objects are not valid as a React child (found: object with keys {something}). If you meant to render a collection of children, use an array instead.
+    at throwOnInvalidObjectType (http://localhost:3000/static/js/bundle.js:17315:13)
+    at createChild (http://localhost:3000/static/js/bundle.js:17527:11)
+    at reconcileChildrenArray (http://localhost:3000/static/js/bundle.js:17744:29)
+    at reconcileChildFibers (http://localhost:3000/static/js/bundle.js:18086:20)
+    at reconcileChildren (http://localhost:3000/static/js/bundle.js:22506:32)
+    at updateHostComponent (http://localhost:3000/static/js/bundle.js:23157:7)
+    at beginWork (http://localhost:3000/static/js/bundle.js:24609:18)
+    at beginWork$1 (http://localhost:3000/static/js/bundle.js:29544:18)
+    at performUnitOfWork (http://localhost:3000/static/js/bundle.js:28814:16)
+    at workLoopSync (http://localhost:3000/static/js/bundle.js:28737:9)
+Error Info: 
+    at div
+    at ErrorBoundary (http://localhost:3000/main.342faec92c8187ed4172.hot-update.js:27:5)
+    at App (http://localhost:3000/static/js/bundle.js:29:74)
+===========================================================================================================================================
+2024-07-30T00:38:27.748731800 - Error: Objects are not valid as a React child (found: object with keys {something}). If you meant to render a collection of children, use an array instead.
+Error: Objects are not valid as a React child (found: object with keys {something}). If you meant to render a collection of children, use an array instead.
+    at throwOnInvalidObjectType (http://localhost:3000/static/js/bundle.js:17315:13)
+    at createChild (http://localhost:3000/static/js/bundle.js:17527:11)
+    at reconcileChildrenArray (http://localhost:3000/static/js/bundle.js:17744:29)
+    at reconcileChildFibers (http://localhost:3000/static/js/bundle.js:18086:20)
+    at reconcileChildren (http://localhost:3000/static/js/bundle.js:22513:32)
+    at updateHostComponent (http://localhost:3000/static/js/bundle.js:23157:7)
+    at beginWork (http://localhost:3000/static/js/bundle.js:24609:18)
+    at beginWork$1 (http://localhost:3000/static/js/bundle.js:29544:18)
+    at performUnitOfWork (http://localhost:3000/static/js/bundle.js:28814:16)
+    at workLoopSync (http://localhost:3000/static/js/bundle.js:28737:9)
+Error Info: 
+    at div
+    at ErrorBoundary (http://localhost:3000/static/js/bundle.js:127:5)
+    at App (http://localhost:3000/static/js/bundle.js:29:74)
+===========================================================================================================================================

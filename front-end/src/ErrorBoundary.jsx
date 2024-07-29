@@ -7,7 +7,7 @@ class ErrorBoundary extends React.Component {
     this.state = { hasError: false };
   }
 
-  static getDerivedStateFromError(error) {
+  static getDerivedStateFromError() {
     return { hasError: true };
   }
 
@@ -16,15 +16,15 @@ class ErrorBoundary extends React.Component {
   }
 
   sendErrorLog = async (error, errorInfo) => {
+    const errorData = {
+      error: `${error.message}\n${error.stack}`,
+      errorInfo: errorInfo.componentStack,
+    };
+
     try {
-      await axios.post(`http://localhost:8091/sample/error`, {
-        error: error.toString(),
-        errorInfo: errorInfo.componentStack,
-        userAgent: navigator.userAgent,
-        url: window.location.href
-      });
+      await axios.post('http://localhost:8091/sample/error', errorData);
     } catch (err) {
-      console.error("Failed to send error log", err);
+      console.error("Gagal mengirim log error", err);
     }
   };
 

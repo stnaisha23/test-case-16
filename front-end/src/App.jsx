@@ -5,7 +5,7 @@ function App() {
   const [comp, setComp] = useState(null);
 
   const handleClick = useCallback(() => {
-    setComp({"something": "is wrong"})
+    setComp({"something": "is wrong"});
   }, []);
 
   return (
