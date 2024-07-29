@@ -1,0 +1,57 @@
+#-----------------------------------
+--- # Application
+#-----------------------------------
+
+server:
+  port: 8091
+
+#-----------------------------------
+--- # i18n & L10n
+#-----------------------------------
+
+spring:
+  messages:
+    encoding: UTF-8
+    basename: i18n/messages
+
+#-----------------------------------
+--- # Logging
+#-----------------------------------
+log:
+  file:
+    path: D:/RIFA/Evaluasi/logfile.log
+
+logging:
+  level:
+    com:
+      tujuhsembilan: TRACE
+
+#-----------------------------------
+--- # Actuator
+#-----------------------------------
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - loggers
+        - logfile
+  endpoint:
+    loggers:
+      enabled: true
+    logfile:
+      enabled: true
+
+#-----------------------------------
+--- # Miscellanous
+#-----------------------------------
+
+spring:
+  output:
+    ansi:
+      enabled: always # Just console color, I'm lovin' it!
+
+# # -----------------------------------
+# --- #
+# # -----------------------------------

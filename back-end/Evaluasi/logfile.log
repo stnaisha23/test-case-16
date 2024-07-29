@@ -1,0 +1,7 @@
+2024-07-29T20:47:44.576500 - {error=TypeError: Cannot read property 'foo' of undefined, errorInfo=at MyComponent (App.js:10:5)
+    at div
+    at ErrorBoundary (ErrorBoundary.js:15:5)}
+2024-07-29T20:47:56.201218500 - {error=Error: Objects are not valid as a React child (found: object with keys {something}). If you meant to render a collection of children, use an array instead., errorInfo=
+    at div
+    at ErrorBoundary (http://localhost:3000/static/js/bundle.js:127:5)
+    at App (http://localhost:3000/static/js/bundle.js:29:74), userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36, url=http://localhost:3000/}
